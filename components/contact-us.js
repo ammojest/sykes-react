@@ -6,6 +6,10 @@ const Contact = () => {
             if ( !field.name ) return;
             formData[field.name] = field.value;
         })
+        fetch('/api/mail', {
+            method: 'post',
+            body: JSON.stringify(formData)
+        })
         console.log(formData);
     }
     return ( 
@@ -15,7 +19,7 @@ const Contact = () => {
                 Contact Us
             </h1>
         </div>
-        <div className="w-full text-center">
+        <div className="w-full flex flex-col items-center">
             <form meethod="post" onSubmit={handleOnSubmit}>
                 <p>
                     <label htmlFor="name" className="block m-2">Name</label>
