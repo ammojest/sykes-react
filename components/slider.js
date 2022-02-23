@@ -9,7 +9,7 @@ const featuredImages = [
 ];
 // pulls in main text
 const featuredText = [
-    "Seafood by Sykes",
+    "Seafood by Sykes Github Test",
     "Prawns",
     "Cod",
 ]
