@@ -1,0 +1,39 @@
+@import url("https://use.typekit.net/bza2dpc.css");
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "futura pt";
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.fade-anim img {
+  animation: fadeAnim 0.5s ease-out;
+}
+@keyframes fadeAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@import url("https://use.typekit.net/bza2dpc.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
