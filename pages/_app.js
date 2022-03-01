@@ -2,6 +2,7 @@
 import Layout from '../components/layout'
 import '../styles/globals.css'
 import Head from 'next/head'
+import Search from '../components/search'
 
 function MyApp({ Component, pageProps }) {
   return (

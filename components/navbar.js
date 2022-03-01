@@ -8,17 +8,16 @@ const Navbar = () => {
     return ( 
         <>
         <nav className="bg-transparent z-50 w-screen fixed">
-            <div className="px-12 mx-auto">
-                <div className="flex justify-between py-3">
-                    <div className="flex items-center">
+            <div className="px-12 py-4 mx-auto flex">
+                    <div className="flex basis-1/3 justify-start items-center">
                         <div>
-                            <NavItem href="/products" text="Products" />
+                            <NavItem href="/about-us" text="About Sykes" />
                         </div>
                         <div>
-                            <NavItem href="/special-offers" text="Special Offers" />
+                            <NavItem href="/contact-us" text="Contact Us" />
                         </div>
                     </div>
-                    <div className="logo">
+                    <div className="flex basis-1/3 logo justify-center">
                         <Link href="/" alt="homepage">
                             <a>
                                 <Image 
@@ -30,11 +29,13 @@ const Navbar = () => {
                             </a>
                         </Link>
                     </div>
-                    <div className="flex items-center space-x-3 text-white">
-                        <FaUser size={30} />
-                        <FaSearch size={30} />
+                    <div className="flex basis-1/3 justify-end items-center">
+                        <Link href="/" alt="homepage">
+                            <a>
+                                <FaUser width={50} className="text-white" />
+                            </a>
+                        </Link>
                     </div>
-                </div>
             </div>
         </nav>
         </>

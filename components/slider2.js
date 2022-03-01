@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { FaArrowAltCircleLeft, FaArrowAltCircleRight, FaCircle } from 'react-icons/fa';
+import { FaArrowAltCircleLeft, FaArrowAltCircleRight  } from 'react-icons/fa';
 
 // pulls in images to slider
 const featuredImages = [
@@ -43,6 +43,10 @@ const Slider = () => {
 
     }, []);
 
+    const pauseSlider = () => {
+        clearInterval(slideInterval);
+    }
+
 
     const handleOnNextClick = () => {
         count = ( count + 1 ) %  featuredImages.length;
@@ -56,27 +60,20 @@ const Slider = () => {
         slideRef.current.classList.add('fade-anim');
     }
 
+    // const startSlider = () => {
+    //     setInterval(() => {
+    //     handleOnNextClick();
+    // }, 5000);
+    // };
 
     console.log(slideRef);
     return ( 
         <>
             <div ref={slideRef} className="w-full m-auto block">
                 <div className="relative select-none">
-                    <img className="object-cover w-full h-[95vh] brightness-50" src={featuredImages[currentIndex]} alt="" />
-                    <div className="absolute top-1/2 transform -translate-y-1/2 px-5 w-full flex justify-between text-white z-3">
+                    <img className="object-cover w-full h-[95vh]" src={featuredImages[currentIndex]} alt="" />
+                    <div className="absolute top-1/2 transform -translate-y-1/2 px-5 w-full flex justify-between text-white">
                         <button type="button" aria-label="Change Slide"onClick={handleOnPrevCLick}><FaArrowAltCircleLeft size={30} /></button>
-                        <div className="text-center space-y-5">
-                            <h2 className="text-6xl text-white uppercase">{featuredText[currentIndex]}</h2>
-                            <p>{subText[currentIndex]}</p>
-                            <button className="bg-brand p-3 hover:bg-transparent  hover:border border-double border-whute border-4 hover:border-brand uppercase">
-                                shop this page
-                            </button>
-                            {/* <div className="mt-auto h-full">
-                                <button><FaCircle size={30} /></button>
-                                <button><FaCircle size={30} /></button>
-                                <button><FaCircle size={30} /></button>
-                            </div> */}
-                        </div>
                         <button type="button" aria-label="Change Slide"onClick={handleOnNextClick}><FaArrowAltCircleRight size={30}/></button>
                     </div>
                 </div>
