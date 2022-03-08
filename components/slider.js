@@ -66,7 +66,7 @@ const Slider = () => {
                     <div className="absolute top-1/2 transform -translate-y-1/2 px-5 w-full flex justify-between text-white z-3">
                         <button type="button" aria-label="Change Slide"onClick={handleOnPrevCLick}><FaArrowAltCircleLeft size={30} /></button>
                         <div className="text-center space-y-5">
-                            <h2 className="text-6xl text-white uppercase">{featuredText[currentIndex]}</h2>
+                            <h2 className="text-6xl text-white uppercase tracking-wide">{featuredText[currentIndex]}</h2>
                             <p>{subText[currentIndex]}</p>
                             <button className="bg-brand p-3 hover:bg-transparent  hover:border border-double border-whute border-4 hover:border-brand uppercase">
                                 shop this page

@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Sykes Seafood | Frozen Seafood & Fish</title>
         <meta name="description" content="Sykes Seafood have been providing frozen fish & seafood for over a century to the wholesale, retail & hospitality industries." />
+        <link rel="shortcut icon" href="/sykes-brand-logo-footer.svg" />
       </Head>
       <Component {...pageProps} />
     </ Layout>

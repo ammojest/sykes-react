@@ -5,12 +5,22 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "futura pt";
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+p {
+  color:#a6acb0;
+  line-height:2;
+  margin-bottom:4rem;
+}
+
+h1, h2, h3, h4 {
+  font-family:'Futura PT', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
 }
 
 * {
@@ -45,6 +55,24 @@ a {
   white-space: nowrap;
   width: 1px;
 }
+
+nav.nav-menu {
+  left:-50%;
+  position: fixed;
+  transition: 350ms;
+  z-index:50;
+}
+
+nav.nav-menu.active {
+  left:0%;
+  position: fixed;
+  z-index:50;
+  transition: 350ms;
+  width: 100%;
+}
+
+
+
 
 
 
