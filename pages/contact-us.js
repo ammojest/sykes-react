@@ -4,7 +4,6 @@ const ContactPage = () => {
         <section>
             <div className="w-full m-auto block">
                 <div className="relative select-none">
-                    <img className="object-cover w-full h-[50vh] brightness-50" src="/Fisherman.jpeg" alt="" />
                     <div className="absolute top-1/2 transform -translate-y-1/2 px-5 w-full text-white z-3">
                         <div className="text-center space-y-5">
                             <h2 className="text-6xl text-white uppercase">Contact Us</h2>
