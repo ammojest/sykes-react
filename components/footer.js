@@ -46,7 +46,7 @@ const Footer = () => {
                     <p>Registration Number 02289318</p>
                     </address>
                 </div>
-                <div className="flex flex-col md:flex-row space-x-4 text-center md:text-left text-sm text-footer underline">
+                <div className="flex flex-col md:flex-row space-x-4 text-center md:text-left text-xs text-footer underline">
                     <Link href="/">
                         <a>
                             Terms & Conditions

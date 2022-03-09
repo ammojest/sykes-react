@@ -5,20 +5,21 @@ import * as AiIcons from 'react-icons/ai';
 import { useState } from "react";
 
 
-const NavItem = props => <a href={props.href} className="text-white m-2 hidden md:block hover:underline" >{props.text}</a>;
+const NavItem = props => <a href={props.href} className="text-white m-2 hidden md:block hover:bg-Whitehover duration-200 delay-75 p-2" >{props.text}</a>;
 
 const Navbar = () => {
 
     const [sidebar, setSidebar] = useState(false);
 
     const showSidebar = () => setSidebar(!sidebar);
+
     return ( 
         <>
         <nav className="bg-transparent z-50 w-screen fixed">
             <div className="px-12 py-4 mx-auto flex uppercase bg-transparent">
                     <div className="flex basis-1/3 justify-start items-center">
                         <div>
-                            <FaIcons.FaBars width={60} onClick={showSidebar} className="text-white text-3xl block md:hidden z-60"/>
+                            <FaIcons.FaBars width={60} onClick={showSidebar} className="text-3xl text-white block md:hidden z-60"/>
                         </div>
                         <div>
                             <NavItem href="/about-us" text="About Sykes" />

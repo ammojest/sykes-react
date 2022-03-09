@@ -22,21 +22,23 @@ export default function Home( ) {
     </section>
     <section id="who-are-sykes" className='my-4'>
     <div className="md:grid md:grid-cols-2 text-center items-center justify-center flex">
-      <div id="flex flex-col items-center justify-center w-full">
+      <div id="flex flex-col items-center justify-center w-full space-x-3">
         <h2 className='mb-3 text-xl tracking-widest'>WHO ARE SYKES SEAFOOD?</h2>
-        <p className='text-center text-copy w-3/4 mx-auto'>Sykes Seafood have over a century of experience providing frozen seafood online, with advanced knowledge across all areas of the industry from sustainability to sourcing. Our team have built up an extensive number of years working within the fish and seafood industry, resulting in guaranteed first-rate products and services every time.</p>
+        <p className='text-center text-copy w-2/3 mx-auto'>Sykes Seafood have over a century of experience providing frozen seafood online, with advanced knowledge across all areas of the industry from sustainability to sourcing. Our team have built up an extensive number of years working within the fish and seafood industry, resulting in guaranteed first-rate products and services every time.</p>
         <button className='my-3 bg-brand p-3 text-white uppercase'>
           Where We Source
         </button>
       </div>
-      <img src="/fisherman.jpeg" className='object-cover hidden md:block' alt="fisherman" />
+        <Image src="/fisherman.jpeg" alt="fisherman" width={1000} height={750} layout="responsive" />
+
+      {/* <img src="/fisherman.jpeg" className='object-cover hidden md:block' alt="fisherman" /> */}
     </div>
     </section>
-    <section id="special-offers" className='my-5 flex flex-col justify-center items-center p-20'>
+    {/* <section id="special-offers" className='my-5 flex flex-col justify-center items-center p-20'>
       <h3 className='mb-3 text-xl tracking-widest'>SPECIAL OFFERS</h3>
       <p className='text-copy'>The same quality seafood, just cheaper prices. Discover our discounts below.</p>
       <button className='my-3 bg-brand p-3 text-white uppercase'>Shop Now</button>
-    </section>
+    </section> */}
     <section id="help" className='w-full m-auto block'>
       <div className="relative">
       <img src="/scallops.jpeg" alt="" className='object-cover w-full h-96 brightness-50'/>
@@ -45,6 +47,20 @@ export default function Home( ) {
         <p className='text-white text-center w-3/4 md:w-1/2'>We&quot;re a brand built on quality, with only the finest raw materials selected. We&quot;re invested in people, whether that be members of our team or part of our joint ventures. In every instance, we aim to provide the very best result, from catch to customer.</p>
         <button className='my-3 bg-brand p-3 text-white uppercase'>Help Centre</button>
       </div>
+      </div>
+    </section>
+    <section>
+      <div className="grid grid-cols-1 md:grid-cols-3 bg-brand text-white justify-center py-9" id="contact-form">
+        <div className="flex justify-center col-span-2 items-center">
+          <h3 className='text-lg align-middle text-center md:text-left p-3 md:p-0' id="sign up text">sign up to our newsletter today & receive our latest offers and product launches</h3>  
+        </div>
+        <div className="flex justify-center col-span-1">
+        <form>
+          <input type="text" className='bg-transparent border-white border-t border-b border-l p-2' placeholder='Enter Email Addresss'/>
+          <input type="submit" className='border-white border p-2 hover:bg-white' value="Submit" />
+      </form>
+        </div>
+        
       </div>
     </section>
 
