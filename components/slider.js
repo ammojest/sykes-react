@@ -68,7 +68,7 @@ const Slider = () => {
                         <div className="text-center space-y-5">
                             <h2 className="text-6xl text-white uppercase tracking-wide">{featuredText[currentIndex]}</h2>
                             <p>{subText[currentIndex]}</p>
-                            <button className="bg-brand p-3 hover:bg-transparent  hover:border border-double border-whute border-4 hover:border-brand uppercase">
+                            <button className="bg-brand p-3 uppercase">
                                 shop this page
                             </button>
                             {/* <div className="mt-auto h-full">
