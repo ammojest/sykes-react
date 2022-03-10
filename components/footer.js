@@ -52,17 +52,17 @@ const Footer = () => {
                             Terms & Conditions
                         </a>
                     </Link>
-                    <Link href="/">
+                    <Link href="/privacy">
                         <a className='text-xs'>
                             Privacy policy
                         </a>
                     </Link>
-                    <Link href="/">
+                    <Link href="/gdpr">
                         <a className='text-xs'>
                             GDPR
                         </a>
                     </Link>
-                    <Link href="/">
+                    <Link href="/statement">
                         <a className='text-xs'>
                          Modern Slavery Statement
                         </a>

@@ -1,7 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Contact from '../components/contact-us';
-import SearchBar from '../components/search';
 import SignUp from '../components/sign-up';
 import Slider from '../components/slider';
 const CTAbutton = props => <button className='bg-black text-white p-2 rounded'>{props.text}</button>;

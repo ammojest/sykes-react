@@ -9,9 +9,9 @@ const Terms = () => {
         </Head>
         <section className="mx-auto px-5 container mt-5">
             <header>
-                <h1 className="uppercase text-center">Terms and Conditions</h1>
+                <h1 className="uppercase text-center my-6">Terms and Conditions</h1>
             </header>
-            <div className="w-100">
+            <div className="w-100 text-md flex flex-col space-y-5">
                 <p>Interpretation</p>
                 <p>In these Conditions, the following definitions shall apply:</p>
                 <p>Business Day:&nbsp; a day (other than a Saturday, Sunday or public holiday) when banks in London are open for business;</p>

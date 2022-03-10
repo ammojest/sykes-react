@@ -7,7 +7,8 @@ const SignUp = () => {
                 </div>
                 <div className="flex justify-center col-span-1">
                     <form>
-                        <input type="text" className='bg-transparent border-white border-t border-b border-l p-2' placeholder='Enter Email Addresss'/>
+                        <input type="text" className='bg-transparent border-white border-t border-b border-l p-2' placeholder='Enter Email Addresss' required pattern="[a-z0-9.%=-]+@[a-z0-9.-}+\[a-z]{2,4}$"/>
+                        <p id="error" className="error">Please enter an email</p>
                         <input type="submit" className='border-white border p-2 hover:bg-white' value="Submit" />
                     </form>
                 </div>
