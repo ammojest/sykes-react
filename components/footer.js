@@ -41,35 +41,35 @@ const Footer = () => {
         <div className='py-5 px-7 mt-5'>
             <div className="flex flex-col md:flex-row justify-between space-y-4">
                 <div className="flex flex-col">
-                    <address className='text-xs font-thin text-footer text-center'>
-                    <p>Sykes Seafood Registered office address: 100 King Street, Knutsford, Cheshire WA16 6HQ.</p>
-                    <p>Registration Number 02289318</p>
+                    <address className='text-xs font-thin text-footer text-left'>
+                    <p className='text-xs'>Sykes Seafood Registered office address: 100 King Street, Knutsford, Cheshire WA16 6HQ.</p>
+                    <p className='text-xs'>Registration Number 02289318</p>
                     </address>
                 </div>
                 <div className="flex flex-col md:flex-row space-x-4 text-center md:text-left text-xs text-footer underline">
-                    <Link href="/">
-                        <a>
+                    <Link href="/terms">
+                        <a className='text-xs'>
                             Terms & Conditions
                         </a>
                     </Link>
                     <Link href="/">
-                        <a>
+                        <a className='text-xs'>
                             Privacy policy
                         </a>
                     </Link>
                     <Link href="/">
-                        <a>
+                        <a className='text-xs'>
                             GDPR
                         </a>
                     </Link>
                     <Link href="/">
-                        <a>
+                        <a className='text-xs'>
                          Modern Slavery Statement
                         </a>
                     </Link>
                 </div>
                 <div className="flex flex-col md:flex-row text-center md:text-left text-footer">
-                    <p>&copy;{year}, Sykes Seafood</p>
+                    <p className='text-xs'>&copy;{year}, Sykes Seafood</p>
                 </div>
             </div>
         </div>

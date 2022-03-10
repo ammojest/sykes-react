@@ -15,7 +15,7 @@ const Navbar = () => {
 
     return ( 
         <>
-        <nav className="bg-transparent z-50 w-screen fixed">
+        <nav className="bg-brand z-50 w-screen sticky top-0">
             <div className="px-12 py-4 mx-auto flex uppercase bg-transparent text-md">
                     <div className="flex basis-1/3 justify-start items-center">
                         <div>

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import SignUp from "../components/sign-up";
 
 
 
@@ -35,6 +36,40 @@ const WhereWeSource = () => {
                     <h3>SOURCING OUR PRODUCTS</h3>
                     <p className="w-3/4 mx-auto">Our product range is built upon only the highest sourced raw materials. Our Buyers have worked within the industry and encompass knowledge, experience and confidence in their decisions. We work with trusted suppliers in joint ventures that have been part of our business for a vast amount of time. We source from across the globe with relationships built in a variety of countries through a multitude of languages. We work with teams across the world to ensure we source the finest and freshest raw material available to buy to UK Technical accreditation and standards.</p>
                 </div>
+            </div>
+        </section>
+        <section>
+            <div className="grid grid-cols-1 md:grid-cols-5 my-7 space-y-5">
+                <div className="relative aspect-w-16 aspect-h-9 h-[500px]">
+                    <Image 
+                        src="/waves-bg-lg.jpeg"
+                        alt="waves" 
+                        layout="fill" 
+                        objectFit="cover" 
+                    />
+                </div>
+                <div className="flex flex-col justify-center items-center px-3 mx-1 md:mx-7 col-span-3 space-y-5 ">
+                    <h2 className="text-center my-3">OUR FACILITIES</h2>
+                    <p className="mx-7 w-3/4 text-center text-copy">Today, we specialise in supplying a wide range of high quality, predominantly frozen, fish and seafood to a variation of market sectors including Foodservice, Retail, Wholesale, Manufacturers and End Users. We have two sites; Manchester, our hometown and the location of Sykes’ Head Office and Liverpool, our state of the art factory. Sykes Liverpool remains to be the driving force on industry standards within the food industry; with the highest BRC grade (AA+) awarded. Together, with our factory capabilities we are able to offer a leading service from start to finish.</p>
+                    <Link href="/our-facilities">
+                        <a>
+                            <button className="uppercase">Our Facilities</button>  
+                        </a>                    
+                    </Link>
+                </div>
+                <div className="relative aspect-w-16 aspect-h-9 h-[500px] hidden md:block">
+                    <Image 
+                        src="/waves-bg-lg.jpeg"
+                        alt="waves" 
+                        layout="fill" 
+                        objectFit="cover" 
+                    />
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <SignUp/>
             </div>
         </section>
         </>

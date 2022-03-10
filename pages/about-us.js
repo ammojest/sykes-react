@@ -21,14 +21,24 @@ const AboutUs = () => {
         <section>
             <div className="grid grid-cols-1 md:grid-cols-4 my-7 space-y-5">
                 <div className="relative aspect-w-16 aspect-h-9 h-[500px]">
-                    <Image src="/Old_1.jpeg" alt="old image of docks" width={996} height={781} layout="fill" objectFit="cover" />
+                    <Image 
+                        src="/Old_1.jpeg"
+                        alt="old image of docks" 
+                        layout="fill" 
+                        objectFit="cover" 
+                    />
                 </div>
                 <div className="flex flex-col justify-center items-center px-3 mx-1 md:mx-7 col-span-2 ">
                     <h2 className="text-center my-3">The History</h2>
                     <p className="mx-7 w-3/4 text-center text-copy">Our business began in Manchester in 1862 by Joseph Sykes, by the trading in wet fish and Dutch Shrimp — a miracle to previous generations. At this time, fresh fish was merely obtainable at seaside ports, so to a city like Manchester, fish was only available if preserved by smoking or salting. By the mid-19th century, with the development of Britain&quot;s rail network and speed of international transport, vast quantities of ice could now be transferred from Canada. J. Sykes seized this opportunity by purchasing ice from ice salesman to store fresh fish. Like the swell of the waves, Sykes Seafood has no intention of standing still. We have been established since 1862 and in 2020 our desire & passion for the industry we operate within, remains as strong as ever. As with all great adventures the best is yet to come. Our company, including it is dedicated workforce, continue to grow and the unequalled quality of our products and customer service gets even better with the passage of time.</p>  
                 </div>
                 <div className="relative aspect-w-16 aspect-h-9 h-[500px]">
-                    <Image src="/Old_2.jpeg" alt="old image of docks" width={996} height={781} layout="fill" objectFit="cover" />
+                    <Image 
+                        src="/Old_2.jpeg" 
+                        alt="old image of docks" 
+                        layout="fill" 
+                        objectFit="cover" 
+                    />
                 </div>
             </div>
         </section>
@@ -49,16 +59,27 @@ const AboutUs = () => {
             </div>
         </section>
         <section>
-            <div className="grid grid-cols-1 md:grid-cols-4 my-7 space-y-5">
+            <div className="grid grid-cols-1 md:grid-cols-5 my-7 space-y-5">
                 <div className="relative aspect-w-16 aspect-h-9 h-[700px]">
-                    <Image src="/prawn-pack-arctic.jpeg" alt="arctic prawns" width={996} height={781} layout="fill" objectFit="cover" />
+                    <Image 
+                        src="/prawn-pack-arctic.jpeg" 
+                        alt="arctic prawns" 
+                        layout="fill" 
+                        objectFit="cover" 
+                        objectPosition="center"
+                    />
                 </div>
-                <div className="flex flex-col justify-center items-center px-3 mx-1 md:mx-7 col-span-2 ">
+                <div className="flex flex-col justify-center items-center px-3 mx-1 md:mx-7 col-span-3 ">
                     <h2 className="text-center my-3">PREMIUM BRANDS</h2>
                     <p className="mx-7 w-3/4 text-center text-copy">Our products bring that fresh-from-the-sea experience to the plate. We offer the sweetest, freshest, most delicious seafood you'll ever taste. Every day, we handle 400 tonnes of the finest frozen fish and seafood sourced from all over the world. This enables us to offer a selection of bespoke brands developed to cater for the individual needs of all our customers. Our distinct ranges offer exceptional versatility and benefits, including flexibility on price and the advantage of being able to buy different value ranges from one trusted supplier. Arctic Royal is our premium long-serving flagship brand with more than 200 products in the range. Originally available to just restaurants and chefs, Arctic Royal has expanded into the retail sector. It is now one of the fastest-growing brands on the market, bringing the world's finest seafood, closer to home. Clear Seas was developed to compliment our Arctic Royal range and offers excellent every day value for money. Available to both the food service industry and retail customers, Clear Seas offers an extensive range of products including squid, lobster and prawns at cost-effective prices. Glenmyr was created as an affordable, flexible, food service-only brand. With a wide array of different fish and seafood products, Glenmyr serves the needs of caterers and wholesalers alike.</p>  
                 </div>
                 <div className="relative aspect-w-16 aspect-h-9 h-[700px]">
-                    <Image src="/glenmyr-prawns.jpeg" alt="Glenmry Prawns" width={996} height={781} layout="fill" objectFit="cover" />
+                    <Image 
+                        src="/glenmyr-prawns.jpeg" 
+                        alt="Glenmry Prawns" 
+                        layout="fill" 
+                        objectFit="cover" 
+                    />
                 </div>
             </div>
         </section>
@@ -80,17 +101,27 @@ const AboutUs = () => {
             </div>
         </section>
         <section>
-            <div className="grid grid-cols-1 md:grid-cols-4 my-7 space-y-5">
+            <div className="grid grid-cols-1 md:grid-cols-5 my-7 space-y-5">
                 <div className="relative aspect-w-16 aspect-h-9 h-[700px]">
-                    <Image src="/lonely-boat.jpeg" alt="fishing boat" width={996} height={781} layout="fill" objectFit="cover" />
+                    <Image 
+                        src="/lonely-boat.jpeg" 
+                        alt="fishing boat" 
+                        layout="fill" 
+                        objectFit="cover" 
+                    />
                 </div>
-                <div className="flex flex-col justify-center items-center px-3 mx-1 md:mx-7 col-span-2 space-y-5 ">
+                <div className="flex flex-col justify-center items-center px-3 mx-1 md:mx-7 col-span-3 space-y-5 ">
                     <h2 className="text-center my-3">STRAIGHT FROM THE SOURCE</h2>
                     <p className="mx-7 w-3/4 text-center text-copy">As a major importer of a wide range of fish and seafood, we accept we hold a level of responsibility. We impart our own high standards and expectations throughout the supply chain and are committed to sourcing from Sustainable, well-managed and responsible fishing areas and aquaculture regions. The growing demand for complete transparency in supply chains is one that we're at the forefront of. We pro-actively support a range of organization who are dedicated to the improvement and long term sustainability of fish stock globally; MSC, ASC, BAP and GAP to name a few. Although we do not directly own or operate ‘Sykes’ fishing boats, we ensure to source directly from partner vessels and manage a supply chain that spans across the world with interactions right through from catch to customer.</p>  
                     <button className="bg-brand text-white p-3 w-1/2 mx-auto">WHERE WE SOURCE</button>
                 </div>
                 <div className="relative aspect-w-16 aspect-h-9 h-[700px]">
-                    <Image src="/waves.jpeg" alt="waves" width={996} height={781} layout="fill" objectFit="cover" />
+                    <Image 
+                        src="/waves.jpeg" 
+                        alt="waves" 
+                        layout="fill" 
+                        objectFit="cover" 
+                    />
                 </div>
             </div>
         </section>
