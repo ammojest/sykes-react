@@ -55,9 +55,7 @@ const Slider = () => {
         setCurrentIndex(count);
         slideRef.current.classList.add('fade-anim');
     }
-
-
-    console.log(slideRef);
+    
     return ( 
         <>
             <div ref={slideRef} className="w-full m-auto block">
