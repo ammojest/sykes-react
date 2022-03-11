@@ -40,8 +40,14 @@ export default function Home( ) {
     </div>
     </section>
     <section id="help" className='w-full m-auto block'>
-      <div className="relative">
-      <img src="/scallops.jpeg" alt="" className='object-cover w-full h-96 brightness-50'/>
+      <div className="relative h-[500px]">
+        <Image
+          src="/scallops.jpeg"
+          alt="scallops background"
+          objectFit="cover"
+          layout="fill"
+        />
+      {/* <img src="/scallops.jpeg" alt="" className='object-cover w-full h-96 brightness-50'/> */}
       <div className="absolute top-1/2 transform -translate-y-1/2 px-5 flex flex-col justify-between items-center text-white z-3">
         <h3 className='mb-3 text-xl tracking-widest'>NEED SOME HELP?</h3>
         <p className='text-white text-center w-3/4 md:w-1/2'>We&quot;re a brand built on quality, with only the finest raw materials selected. We&quot;re invested in people, whether that be members of our team or part of our joint ventures. In every instance, we aim to provide the very best result, from catch to customer.</p>

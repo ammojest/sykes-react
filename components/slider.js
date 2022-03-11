@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight, FaCircle } from 'react-icons/fa';
+import Image from "next/image";
 
 // pulls in images to slider
 const featuredImages = [
@@ -55,12 +56,19 @@ const Slider = () => {
         setCurrentIndex(count);
         slideRef.current.classList.add('fade-anim');
     }
-    
+
     return ( 
         <>
             <div ref={slideRef} className="w-full m-auto block">
-                <div className="relative select-none">
-                    <img className="object-cover w-full h-[95vh] brightness-50" src={featuredImages[currentIndex]} alt="" />
+                <div className="relative select-none h-[90vh]">
+                    <Image 
+                       src={featuredImages[currentIndex]}
+                       alt="Homepage banner"
+                       objectFit="cover"
+                       layout="fill"
+                    />
+
+                    {/* <img className="object-cover w-full h-[95vh] brightness-50" src={featuredImages[currentIndex]} alt="" /> */}
                     <div className="absolute top-1/2 transform -translate-y-1/2 px-5 w-full flex justify-between text-white z-3">
                         <button type="button" aria-label="Change Slide"onClick={handleOnPrevCLick}><FaArrowAltCircleLeft size={30} /></button>
                         <div className="text-center space-y-5">
