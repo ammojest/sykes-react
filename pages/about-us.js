@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 const AboutUs = () => {
     return ( 
@@ -19,7 +20,7 @@ const AboutUs = () => {
             </div>
         </header>
         <section>
-            <div className="grid grid-cols-1 md:grid-cols-4 my-7 space-y-5">
+            <div className="grid grid-cols-1 md:grid-cols-5 my-7">
                 <div className="relative aspect-w-16 aspect-h-9 h-[500px]">
                     <Image 
                         src="/Old_1.jpeg"
@@ -28,7 +29,7 @@ const AboutUs = () => {
                         objectFit="cover" 
                     />
                 </div>
-                <div className="flex flex-col justify-center items-center px-3 mx-1 md:mx-7 col-span-2 ">
+                <div className="flex flex-col justify-center items-center px-3 mx-1 md:mx-7 col-span-3 ">
                     <h2 className="text-center my-3">The History</h2>
                     <p className="mx-7 w-3/4 text-center text-copy">Our business began in Manchester in 1862 by Joseph Sykes, by the trading in wet fish and Dutch Shrimp — a miracle to previous generations. At this time, fresh fish was merely obtainable at seaside ports, so to a city like Manchester, fish was only available if preserved by smoking or salting. By the mid-19th century, with the development of Britain&quot;s rail network and speed of international transport, vast quantities of ice could now be transferred from Canada. J. Sykes seized this opportunity by purchasing ice from ice salesman to store fresh fish. Like the swell of the waves, Sykes Seafood has no intention of standing still. We have been established since 1862 and in 2020 our desire & passion for the industry we operate within, remains as strong as ever. As with all great adventures the best is yet to come. Our company, including it is dedicated workforce, continue to grow and the unequalled quality of our products and customer service gets even better with the passage of time.</p>  
                 </div>
@@ -59,7 +60,7 @@ const AboutUs = () => {
             </div>
         </section>
         <section>
-            <div className="grid grid-cols-1 md:grid-cols-5 my-7 space-y-5">
+            <div className="grid grid-cols-1 md:grid-cols-5 my-7">
                 <div className="relative aspect-w-16 aspect-h-9 h-[700px]">
                     <Image 
                         src="/prawn-pack-arctic.jpeg" 
@@ -101,7 +102,7 @@ const AboutUs = () => {
             </div>
         </section>
         <section>
-            <div className="grid grid-cols-1 md:grid-cols-5 my-7 space-y-5">
+            <div className="grid grid-cols-1 md:grid-cols-5 my-7">
                 <div className="relative aspect-w-16 aspect-h-9 h-[700px]">
                     <Image 
                         src="/lonely-boat.jpeg" 
@@ -113,7 +114,7 @@ const AboutUs = () => {
                 <div className="flex flex-col justify-center items-center px-3 mx-1 md:mx-7 col-span-3 space-y-5 ">
                     <h2 className="text-center my-3">STRAIGHT FROM THE SOURCE</h2>
                     <p className="mx-7 w-3/4 text-center text-copy">As a major importer of a wide range of fish and seafood, we accept we hold a level of responsibility. We impart our own high standards and expectations throughout the supply chain and are committed to sourcing from Sustainable, well-managed and responsible fishing areas and aquaculture regions. The growing demand for complete transparency in supply chains is one that we&apos;re at the forefront of. We pro-actively support a range of organization who are dedicated to the improvement and long term sustainability of fish stock globally; MSC, ASC, BAP and GAP to name a few. Although we do not directly own or operate &apos;Sykes&apos; fishing boats, we ensure to source directly from partner vessels and manage a supply chain that spans across the world with interactions right through from catch to customer.</p>  
-                    <button className="bg-brand text-white p-3 w-1/2 mx-auto">WHERE WE SOURCE</button>
+                    <Link href="/where-we-source"><a><button className="bg-brand text-white p-3 w-1/2 mx-auto">WHERE WE SOURCE</button></a></Link>
                 </div>
                 <div className="relative aspect-w-16 aspect-h-9 h-[700px]">
                     <Image 

@@ -39,7 +39,7 @@ const WhereWeSource = () => {
             </div>
         </section>
         <section>
-            <div className="grid grid-cols-1 md:grid-cols-5 my-7 space-y-5">
+            <div className="grid grid-cols-1 md:grid-cols-5 my-7">
                 <div className="relative aspect-w-16 aspect-h-9 h-[500px]">
                     <Image 
                         src="/waves-bg-lg.jpeg"
@@ -57,7 +57,7 @@ const WhereWeSource = () => {
                         </a>                    
                     </Link>
                 </div>
-                <div className="relative aspect-w-16 aspect-h-9 h-[500px] hidden md:block">
+                <div className="relative aspect-w-16 aspect-h-9 h-[500px]">
                     <Image 
                         src="/waves-bg-lg.jpeg"
                         alt="waves" 

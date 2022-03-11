@@ -18,17 +18,31 @@ const Footer = () => {
             <div className="flex flex-col text-xs">
             <h3 className='uppercase mb-1'>Company</h3>
                 <ul className="flex flex-col justify-center uppercase text-footer text-xs">
-                    <li className='hover:underline'>About Us</li>
-                    <li className='hover:underline'>Where we source</li>
-                    <li className='hover:underline'>Our Facilities</li>
-                    <li className='hover:underline'>Our Brands</li>
+                    <Link href="/about-us" passHref>
+                        <a>
+                            <li className='hover:underline'>About Us</li>
+                        </a>
+                    </Link>
+                    <Link href="/where-we-source" passHref>
+                        <a>
+                            <li className='hover:underline'>Where we source</li>
+                        </a>
+                    </Link>
+                    <Link href="/our-facilities" passHref>
+                        <a>
+                            <li className='hover:underline'>Our Facilities</li>
+                        </a>
+                    </Link>
                 </ul>
             </div>
             <div className="flex flex-col text-xs">
                 <h3 className='uppercase mb-1'>Support</h3>
                 <ul className="flex flex-col justify-center uppercase text-footer text-xs">
-                    <li className='hover:underline'>Contact Us</li>
-                    <li className='hover:underline'>Help Center</li>
+                    <Link href="/contact-us" passHref>
+                        <a>
+                            <li className='hover:underline'>Contact Us</li>
+                        </a>
+                    </Link>
                 </ul>
             </div>
             <div className="flex items-center space-x-2 text-brand ">
@@ -57,7 +71,7 @@ const Footer = () => {
                             Privacy policy
                         </a>
                     </Link>
-                    <Link href="/gdpr">
+                    <Link href="/gdpr" passHref>
                         <a className='text-xs'>
                             GDPR
                         </a>

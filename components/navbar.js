@@ -5,7 +5,7 @@ import * as AiIcons from 'react-icons/ai';
 import { useState } from "react";
 
 
-const NavItem = props => <a href={props.href} className="text-white m-2 hidden md:block hover:bg-Whitehover duration-200 delay-75 p-2" >{props.text}</a>;
+const NavItem = props => <a href={props.href} className="text-white m-2 hidden md:block hover:bg-Whitehover duration-200 delay-75 p-2 font-extralight" >{props.text}</a>;
 
 const Navbar = () => {
 
