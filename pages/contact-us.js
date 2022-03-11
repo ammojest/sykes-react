@@ -14,13 +14,13 @@ const ContactPage = () => {
                 <div className="relative bg-[url('/contact-us-bg-lg.jpeg')] bg-cover bg-center shadow-dark-60 h-[60vh]" id="bg-image">
                     <div className="flex flex-col justify-center items-center h-full text-white" id="header-text">
                         <h1 className="brightness-100 z-20 text-xl font-thin uppercase text-center tracking-widest leading-10 my-3" id="header-text">NEED HELP?</h1>
-                        <p className="w-full md:w-1/2 brightness-100 text-center font-thin text-white">Our Customer Service Team are here to help. Please contact us on 0333 444 1862 or email customer.service@sykesseafood.com.</p>
+                        <p className="w-3/4 md:w-1/2 brightness-100 text-center font-thin text-white">Our Customer Service Team are here to help. Please contact us on 0333 444 1862 or email customer.service@sykesseafood.com.</p>
                     </div>
                 </div>
             </div>
         </header>
         <section>
-            <div className="grid grid-cols-1 md:grid-cols-5 my-7">
+            <div className="grid grid-cols-1 md:grid-cols-5 my-7 space-y-5 md:space-y-0">
                 <div className="relative aspect-w-16 aspect-h-9 h-[500px]">
                     <Image 
                         src="/fishing-ropes.jpeg" 

@@ -28,26 +28,19 @@ export default function Home( ) {
           Where We Source
         </button>
       </div>
-        <Image 
-          src="/fisherman.jpeg" 
-          // placeholder="blur" 
-          alt="fisherman" 
-          width={1000} height={750} 
-          layout="responsive" 
-        />
+        <Image src="/fisherman.jpeg" alt="fisherman" width={1000} height={750} layout="responsive" />
 
       {/* <img src="/fisherman.jpeg" className='object-cover hidden md:block' alt="fisherman" /> */}
     </div>
     </section>
+    {/* <section id="special-offers" className='my-5 flex flex-col justify-center items-center p-20'>
+      <h3 className='mb-3 text-xl tracking-widest'>SPECIAL OFFERS</h3>
+      <p className='text-copy'>The same quality seafood, just cheaper prices. Discover our discounts below.</p>
+      <button className='my-3 bg-brand p-3 text-white uppercase'>Shop Now</button>
+    </section> */}
     <section id="help" className='w-full m-auto block'>
-      <div className="relative h-[500px]">
-        <Image
-          src="/scallops.jpeg"
-          alt="scallops background"
-          objectFit="cover"
-          layout="fill"
-        />
-      {/* <img src="/scallops.jpeg" alt="" className='object-cover w-full h-96 brightness-50'/> */}
+      <div className="relative">
+      <img src="/scallops.jpeg" alt="" className='object-cover w-full h-96 brightness-50'/>
       <div className="absolute top-1/2 transform -translate-y-1/2 px-5 flex flex-col justify-between items-center text-white z-3">
         <h3 className='mb-3 text-xl tracking-widest'>NEED SOME HELP?</h3>
         <p className='text-white text-center w-3/4 md:w-1/2'>We&quot;re a brand built on quality, with only the finest raw materials selected. We&quot;re invested in people, whether that be members of our team or part of our joint ventures. In every instance, we aim to provide the very best result, from catch to customer.</p>

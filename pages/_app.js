@@ -2,9 +2,15 @@
 import Layout from '../components/layout'
 import '../styles/globals.css'
 import Head from 'next/head'
-import Search from '../components/search'
+import { useEffect } from 'react';
+import TagManager from 'react-gtm-module';
 
 function MyApp({ Component, pageProps }) {
+
+  useEffect(() => {
+    TagManager.initialize({ gtmId: 'GTM-NT3JGQR' });
+}, []);
+
   return (
     <Layout>
       <Head>

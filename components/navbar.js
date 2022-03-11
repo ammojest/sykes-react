@@ -25,7 +25,7 @@ const Navbar = () => {
                             <NavItem href="/about-us" text="About Sykes" />
                         </div>
                         <div>
-                            <NavItem href="/contact-us" text="Contact Us" />
+                            <NavItem href="/our-facilities" text="Our Facilities" />
                         </div>
                     </div>
                     <div className="flex basis-1/3 logo justify-center">
@@ -46,7 +46,7 @@ const Navbar = () => {
                             <NavItem href="/where-we-source" text="Where we source" />
                         </div>
                         <div>
-                            <NavItem href="/our-facilities" text="Our Facilities" />
+                            <NavItem href="/contact-us" text="Contact Us" />
                         </div>
                     </div>
             </div>
@@ -54,7 +54,7 @@ const Navbar = () => {
         <nav className={sidebar ? 'nav-menu active ' : 'nav-menu '} >
             <div className="flex">
                 <ul className="bg-brand p-2 h-[100vh] w-2/3 z-50 flex flex-col basis-2/3 justify-start space-y-4 text-xl uppercase font-body" id="nav-menu">
-                    <AiIcons.AiOutlineClose className="text-white text-5xl text-center" onClick={showSidebar} />
+                    <AiIcons.AiOutlineClose className="text-white text-2xl text-center" onClick={showSidebar} />
                     <Link href="/"><li className="text-white pl-3 text-center hover:bg-Whitehover" onClick={showSidebar}>Home</li></Link>
                     <Link href="/about-us"><li className="text-white pl-3 text-center" onClick={showSidebar}>About Us</li></Link>
                     <Link href="/contact-us"><li className="text-white pl-3 text-center" onClick={showSidebar}>Contact Us</li></Link>
