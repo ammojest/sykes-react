@@ -36,6 +36,7 @@ const Navbar = () => {
                                     alt="logo"
                                     height={100}
                                     width={100}
+                                    loading="eager"
                                 />
                             </a>
                         </Link>
