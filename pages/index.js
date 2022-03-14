@@ -49,7 +49,7 @@ export default function Home( ) {
       <div className="absolute top-1/2 transform -translate-y-1/2 px-5 flex flex-col justify-between items-center text-white z-3">
         <h3 className='mb-3 text-xl tracking-widest'>NEED SOME HELP?</h3>
         <p className='text-white text-center w-3/4 md:w-1/2'>We&quot;re a brand built on quality, with only the finest raw materials selected. We&quot;re invested in people, whether that be members of our team or part of our joint ventures. In every instance, we aim to provide the very best result, from catch to customer.</p>
-        <Link href="/contact-us"><button className='my-3 bg-brand p-3 text-white uppercase'>Contact Us</button></Link>>
+        <Link href="/contact-us"><button className='my-3 bg-brand p-3 text-white uppercase'>Contact Us</button></Link>
       </div>
       </div>
     </section>
