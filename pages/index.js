@@ -24,12 +24,12 @@ export default function Home( ) {
     </section>
     <section>
       <div className="grid grid-cols-1 md:grid-cols-2 my-7 space-y-5">
-          <div className="flex flex-col text-center justify-center w-3/4 mx-auto space-y-5 my-7 py-5">
+          <div className="flex flex-col text-center justify-center w-3/4 mx-auto space-y-5 my-7 py-5 order-2 md:order-1">
               <h3>WHO ARE SYKES SEAFOOD?</h3>
               <p className="md:w-3/4 mx-auto">Sykes Seafood have over a century of experience providing frozen seafood online, with advanced knowledge across all areas of the industry from sustainability to sourcing. Our team have built up an extensive number of years working within the fish and seafood industry, resulting in guaranteed first-rate products and services every time</p>
               <Link href="/where-we-source"><button className='my-3 w-1/2 mx-auto bg-brand p-3 text-white uppercase'>WHERE WE SOURCE</button></Link>
           </div>
-          <div className="flex relative aspect-w-16 aspect-h-9 h-[500px]">
+          <div className="flex relative aspect-w-16 aspect-h-9 h-[500px] order-1 md:order-2">
               <Image
                   src="/fisherman.jpeg"
                   alt="Picture of something nice"
