@@ -67,9 +67,9 @@ export default function Home( ) {
       </div>
       </div>
     </section>
-    <section className='mt-1'>
+    {/* <section className='mt-1'>
       <SignUp/>
-    </section>
+    </section> */}
 
 
     </>
