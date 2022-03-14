@@ -22,27 +22,41 @@ export default function Home( ) {
     <section className='text-center px-12 py-7' id="small_banner">
       <h2 className='text-lg md:text-xl uppercase'>Sustainable & quality assured wholesale frozen fish & seafood suppliers since 1862</h2>
     </section>
-    <section id="who-are-sykes" className='my-4'>
-    <div className="md:grid md:grid-cols-2 text-center items-center justify-center flex">
-      <div id="flex flex-col items-center justify-center w-full space-x-3">
-        <h2 className='mb-3 text-xl tracking-widest'>WHO ARE SYKES SEAFOOD?</h2>
-        <p className='text-center text-copy w-2/3 mx-auto'>Sykes Seafood have over a century of experience providing frozen seafood online, with advanced knowledge across all areas of the industry from sustainability to sourcing. Our team have built up an extensive number of years working within the fish and seafood industry, resulting in guaranteed first-rate products and services every time.</p>
-        <Link href="/where-we-source">
-          <button className='my-3 bg-brand p-3 text-white uppercase'>
-            Where We Source
-          </button>
-        </Link>
+    <section>
+      <div className="grid grid-cols-1 md:grid-cols-2 my-7 space-y-5">
+          <div className="flex flex-col text-center justify-center w-3/4 mx-auto space-y-5 my-7 py-5">
+              <h3>WHO ARE SYKES SEAFOOD?</h3>
+              <p className="md:w-3/4 mx-auto">Sykes Seafood have over a century of experience providing frozen seafood online, with advanced knowledge across all areas of the industry from sustainability to sourcing. Our team have built up an extensive number of years working within the fish and seafood industry, resulting in guaranteed first-rate products and services every time</p>
+              <Link href="/where-we-source"><button className='my-3 w-1/2 mx-auto bg-brand p-3 text-white uppercase'>WHERE WE SOURCE</button></Link>
+          </div>
+          <div className="flex relative aspect-w-16 aspect-h-9 h-[500px]">
+              <Image
+                  src="/fisherman.jpeg"
+                  alt="Picture of something nice"
+                  layout="fill"
+                  objectFit="cover"
+              />
+          </div>
       </div>
-        <Image src="/fisherman.jpeg" alt="fisherman" width={1000} height={750} layout="responsive" />
-
-      {/* <img src="/fisherman.jpeg" className='object-cover hidden md:block' alt="fisherman" /> */}
-    </div>
     </section>
-    {/* <section id="special-offers" className='my-5 flex flex-col justify-center items-center p-20'>
-      <h3 className='mb-3 text-xl tracking-widest'>SPECIAL OFFERS</h3>
-      <p className='text-copy'>The same quality seafood, just cheaper prices. Discover our discounts below.</p>
-      <button className='my-3 bg-brand p-3 text-white uppercase'>Shop Now</button>
-    </section> */}
+    <section>
+      <div className="grid grid-cols-1 md:grid-cols-2 my-7 space-y-5">
+          <div className="flex relative aspect-w-16 aspect-h-9 h-[500px]">
+              <Image
+                  src="/Old_1.jpeg"
+                  alt="Picture of something nice"
+                  layout="fill"
+                  objectFit="cover"
+              />
+          </div>
+          <div className="flex flex-col text-center justify-center w-3/4 mx-auto space-y-5 my-7 py-5">
+              <h3>Our History</h3>
+              <p className="md:w-3/4 mx-auto">Discover more about the history of Sykes Seafood and what we stand for as a company. Sykes has been the trusted name in Seafood for over 150 years and we are proud of our strong heritage</p>
+              <Link href="/about-us"><button className='my-3 w-1/2 mx-auto bg-brand p-3 text-white uppercase'>Our History</button></Link>
+          </div>
+      </div>
+    </section>
+
     <section id="help" className='w-full m-auto block'>
       <div className="relative">
       <img src="/scallops.jpeg" alt="" className='object-cover w-full h-96 brightness-50 '/>
