@@ -11,7 +11,7 @@ const AboutUs = () => {
         </Head>
         <header>
             <div className="block">
-                <div className="relative bg-[url('/Fish-process.jpeg')] bg-cover bg-center shadow-dark-60 h-[60vh]" id="bg-image">
+                <div className="relative bg-[url('/Fish-process.webp')] bg-cover bg-center shadow-dark-60 h-[60vh]" id="bg-image">
                     <div className="flex flex-col justify-center items-center h-full px-3 text-white" id="header-text">
                         <h1 className="brightness-100 z-20 text-xl font-thin uppercase text-center tracking-widest leading-10 my-3" id="header-text">A Family Run Business With Over A <br/> Century Of Experience</h1>
                         <p className="my-2 py-3 md:w-1/2 brightness-100 text-center font-thin text-white">We are a brand built on quality, with only the finest raw materials selected. We are invested in people, whether that be members of our team or part of our joint ventures. In every instance, we aim to provide the very best result, from catch to customer.</p>
