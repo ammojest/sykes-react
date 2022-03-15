@@ -77,7 +77,7 @@ export default function Home( ) {
           <h3 className='text-white'>SIGN UP TO OUR NEWSLETTER TODAY & RECEIVE OUR LATEST OFFERS AND PRODUCT LAUNCHES</h3>  
         </div>
         <div>
-          <SimpleForm />
+          {/* <SimpleForm /> */}
         </div>
       </div>
 
