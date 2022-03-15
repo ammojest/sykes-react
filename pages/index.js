@@ -2,12 +2,16 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link';
 import Holding from '../components/holding-screen';
-import SignUp from '../components/sign-up';
 import Slider from '../components/slider';
+import { useState } from 'react';
+import MailchimpFormContainer from '../components/mailchimp';
+import SimpleForm from '../components/mailchimp';
 const CTAbutton = props => <button className='bg-black text-white p-2 rounded'>{props.text}</button>;
 
 
 export default function Home( ) {
+
+  const [ isSubmitted, setisSubmitted] = useState(false);
 
   return (
     <>
@@ -67,9 +71,17 @@ export default function Home( ) {
       </div>
       </div>
     </section>
-    {/* <section className='mt-1'>
-      <SignUp/>
-    </section> */}
+    <section className='mt-1 px-5 bg-brand'>
+      <div className="flex justify-center">
+        <div className=' flex items-center w-1/2'>
+          <h3 className='text-white'>SIGN UP TO OUR NEWSLETTER TODAY & RECEIVE OUR LATEST OFFERS AND PRODUCT LAUNCHES</h3>  
+        </div>
+        <div>
+          <SimpleForm />
+        </div>
+      </div>
+
+    </section>
 
 
     </>
