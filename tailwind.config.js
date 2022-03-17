@@ -12,7 +12,7 @@ module.exports = {
       },
       colors: {
         brand: "#233681",
-        copy: "#a6acb0",
+        copy: "##666666",
         footer: "#9f9f9f",
         Whitehover: "#ffffff59",
     },
