@@ -71,7 +71,7 @@ export default function Home( ) {
       </div>
       </div>
     </section>
-    <section className='mt-1 px-5 py-4 bg-brand'>
+    {/* <section className='mt-1 px-5 py-4 bg-brand'>
       <div className="flex justify-center">
         <div className=' flex items-center w-1/2'>
           <h3 className='text-white'>SIGN UP TO OUR NEWSLETTER TODAY & RECEIVE OUR LATEST OFFERS AND PRODUCT LAUNCHES</h3>  
@@ -80,8 +80,7 @@ export default function Home( ) {
           <SimpleForm />
         </div>
       </div>
-
-    </section>
+    </section> */}
 
 
     </>
