@@ -36,7 +36,7 @@ const Facilities = () => {
         </section>
         <section>
             <div className="grid grid-cols-1 md:grid-cols-2 my-7 space-y-5">
-                <div className="flex relative aspect-w-16 aspect-h-9 h-[500px]">
+                <div className="flex relative aspect-w-16 aspect-h-9 h-[500px] order-2 md:order-1">
                     <Image
                         src="/lonely-boat.jpeg"
                         alt="Boat on the sea"
@@ -44,9 +44,9 @@ const Facilities = () => {
                         objectFit="cover"
                     />
                 </div>
-                <div className="flex flex-col text-center justify-center md:w-3/4 mx-auto space-y-5 my-7 py-5">
-                    <h3>INTERNATIONAL</h3>
-                    <p className="w-3/4 mx-auto">With Sykes being over 150 years old, joint ventures have become a common occurrence between long-standing business partners. Sourcing ethically and ensuring our fish is fresh are two firm objectives for Sykes, so creating joint ventures with specific factories and facilities overseas, directly at the source, ensures this happens.</p>
+                <div className="flex flex-col text-center justify-center md:w-3/4 mx-auto space-y-5 my-7 py-5 order 1 md:order-2">
+                    <h3 className="">INTERNATIONAL</h3>
+                    <p className=" w-10/12 md:w-3/4 mx-auto">With Sykes being over 150 years old, joint ventures have become a common occurrence between long-standing business partners. Sourcing ethically and ensuring our fish is fresh are two firm objectives for Sykes, so creating joint ventures with specific factories and facilities overseas, directly at the source, ensures this happens.</p>
                 </div>
             </div>
         </section>
@@ -54,7 +54,7 @@ const Facilities = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 my-7 space-y-5">
                 <div className="flex flex-col text-center justify-center md:w-3/4 mx-auto space-y-5 my-7 py-5">
                     <h3>CHESHIRE</h3>
-                    <p className="w-3/4 mx-auto">Our second facility is our Cheshire Headquarters. Based in the picturesque town of Knutsford, having recently relocated from our Smithfield Market site, we centrally manage all key business functions.</p>
+                    <p className="w-10/12 md:w-3/4 mx-auto">Our second facility is our Cheshire Headquarters. Based in the picturesque town of Knutsford, having recently relocated from our Smithfield Market site, we centrally manage all key business functions.</p>
                 </div>
                 <div className="flex relative aspect-w-16 aspect-h-9 h-[500px]">
                     <Image
