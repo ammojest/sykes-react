@@ -16,7 +16,7 @@ const Navbar = () => {
     return ( 
         <>
         <nav className="bg-brand z-50 w-screen sticky top-0">
-            <div className="px-12 py-4 mx-auto flex uppercase bg-transparent text-md">
+            <div className="px-12 py-2 md:py-4 mx-auto flex uppercase bg-transparent text-md">
                     <div className="flex basis-1/3 justify-start items-center">
                         <div>
                             <FaIcons.FaBars width={60} onClick={showSidebar} className="text-3xl text-white block md:hidden z-60"/>
