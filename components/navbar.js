@@ -28,9 +28,8 @@ const Navbar = () => {
                             <NavItem href="/our-facilities" text="Our Facilities" />
                         </div>
                     </div>
-                    <div className="flex basis-1/3 logo justify-center">
+                    <div className="flex basis-1/3 justify-center" id="logo">
                         <Link href="/" alt="homepage">
-                            <a>
                                 <Image 
                                     src="/sykes-brand-logo-white.svg"
                                     alt="logo"
@@ -38,7 +37,6 @@ const Navbar = () => {
                                     width={100}
                                     loading="eager"
                                 />
-                            </a>
                         </Link>
                     </div>
                     <div className="flex basis-1/3 justify-end items-center">
