@@ -67,11 +67,6 @@ const WhereWeSource = () => {
                 </div>
             </div>
         </section>
-        <section>
-            <div>
-                <SignUp/>
-            </div>
-        </section>
         </>
      );
 }

@@ -5,13 +5,33 @@ import * as AiIcons from 'react-icons/ai';
 import { useState } from "react";
 
 
-const NavItem = props => <a href={props.href} className="text-white m-2 hidden md:block hover:bg-Whitehover duration-200 delay-75 p-2 font-extralight" >{props.text}</a>;
+const NavItem = props => <Link href={props.href}><a className="text-white m-2 hidden md:block hover:bg-Whitehover duration-200 delay-75 p-2 font-extralight">{props.text}</a></Link>;
 
 const Navbar = () => {
 
     const [sidebar, setSidebar] = useState(false);
 
     const showSidebar = () => setSidebar(!sidebar);
+
+    const changeLogoSize = () => {
+        console.log(window.scrollY);
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("logo").style.width = "75px";
+            document.getElementById("logo").style.transition = "all 0.5s";
+
+        } else {
+            document.getElementById("logo").style.width = "100px";
+            document.getElementById("logo").style.transition = "all 0.5s";
+        }
+
+    }
+
+    if (typeof window !== "undefined") {
+        window.addEventListener('scroll', changeLogoSize);
+    }
+
+
+
 
     return ( 
         <>
@@ -28,16 +48,18 @@ const Navbar = () => {
                             <NavItem href="/our-facilities" text="Our Facilities" />
                         </div>
                     </div>
-                    <div className="flex basis-1/3 justify-center" id="logo">
-                        <Link href="/" alt="homepage">
-                                <Image 
-                                    src="/sykes-brand-logo-white.svg"
-                                    alt="logo"
-                                    height={100}
-                                    width={100}
-                                    loading="eager"
-                                />
-                        </Link>
+                    <div className="flex basis-1/3 justify-center">
+                        <div id="logo">
+                            <Link href="/" alt="homepage">
+                                    <Image 
+                                        src="/sykes-brand-logo-white.svg"
+                                        alt="logo"
+                                        height={100}
+                                        width={100}
+                                        loading="eager"
+                                    />
+                            </Link>
+                        </div>
                     </div>
                     <div className="flex basis-1/3 justify-end items-center">
                         <div>
