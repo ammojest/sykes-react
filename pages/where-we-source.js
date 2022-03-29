@@ -14,7 +14,7 @@ const WhereWeSource = () => {
         </Head>
         <header>
             <div className="block">
-                <div className="relative bg-[url('/where-we-source-header.jpeg')] bg-cover bg-center shadow-dark-60 h-[60vh]" id="bg-image">
+                <div className="relative bg-[url('/where-we-source-header.webp')] bg-cover bg-center shadow-dark-60 h-[60vh]" id="bg-image">
                     <div className="flex flex-col justify-center items-center h-full text-white" id="header-text">
                         <h1 className="brightness-100 z-20 text-xl font-thin uppercase text-center tracking-widest leading-10 my-3" id="header-text">WHERE WE SOURCE</h1>
                         <p className="w-full md:w-1/2 brightness-100 text-center font-thin text-white">Our wide range of stock is created using only the finest raw materials, resulting in only the best results reach each and every plate.</p>
