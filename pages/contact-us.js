@@ -11,7 +11,7 @@ const ContactPage = () => {
         </Head>
         <header>
             <div className="block">
-                <div className="relative bg-[url('/contact-us-bg-lg.jpeg')] bg-cover bg-center shadow-dark-60 h-[60vh]" id="bg-image">
+                <div className="relative bg-[url('/contact-us-bg-lg.webp')] bg-cover bg-center shadow-dark-60 h-[60vh]" id="bg-image">
                     <div className="flex flex-col justify-center items-center h-full text-white" id="header-text">
                         <h1 className="brightness-100 z-20 text-xl font-thin uppercase text-center tracking-widest leading-10 my-3" id="header-text">NEED HELP?</h1>
                         <p className="w-3/4 md:w-1/2 brightness-100 text-center font-thin text-white">Our Customer Service Team are here to help. Please contact us on 0333 444 1862 or email customer.service@sykesseafood.com.</p>
