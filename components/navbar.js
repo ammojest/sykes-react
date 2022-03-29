@@ -2,19 +2,18 @@ import Link from "next/link";
 import Image from "next/image";
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
-import { useState } from "react";
-
-
-const NavItem = props => <Link href={props.href}><a className="text-white m-2 hidden md:block hover:bg-Whitehover duration-200 delay-75 p-2 font-extralight">{props.text}</a></Link>;
+import { useState, useEffect, useRef } from "react";
+;
 
 const Navbar = () => {
 
     const [sidebar, setSidebar] = useState(false);
+    const [dropdown, setDropdown] = useState(false);
 
     const showSidebar = () => setSidebar(!sidebar);
+    const showDropdown = () => setDropdown(!dropdown);
 
     const changeLogoSize = () => {
-        console.log(window.scrollY);
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             document.getElementById("logo").style.width = "75px";
             document.getElementById("logo").style.transition = "all 0.5s";
@@ -31,8 +30,6 @@ const Navbar = () => {
     }
 
 
-
-
     return ( 
         <>
         <nav className="bg-brand z-50 w-screen sticky top-0">
@@ -40,33 +37,37 @@ const Navbar = () => {
                     <div className="flex basis-1/3 justify-start items-center">
                         <div>
                             <FaIcons.FaBars width={60} onClick={showSidebar} className="text-3xl text-white block md:hidden z-60"/>
-                        </div>
-                        <div>
-                            <NavItem href="/about-us" text="About Sykes" />
-                        </div>
-                        <div>
-                            <NavItem href="/our-facilities" text="Our Facilities" />
+                            <Link href="/about-us">
+                                <a className="text-white mx-1 font-thin hover:underline">About Us</a>
+                            </Link>
+                            <Link href="/our-facilities">
+                                <a className="text-white mx-1 font-thin hover:underline">Our Facilities</a>
+                            </Link>
                         </div>
                     </div>
                     <div className="flex basis-1/3 justify-center">
-                        <div id="logo">
                             <Link href="/" alt="homepage">
+                                <a>
+                                    <div id="logo">
                                     <Image 
                                         src="/sykes-brand-logo-white.svg"
                                         alt="logo"
                                         height={100}
                                         width={100}
                                         loading="eager"
-                                    />
+                                        />
+                                    </div>
+                                </a>
                             </Link>
-                        </div>
                     </div>
                     <div className="flex basis-1/3 justify-end items-center">
                         <div>
-                            <NavItem href="/where-we-source" text="Where we source" />
-                        </div>
-                        <div>
-                            <NavItem href="/contact-us" text="Contact Us" />
+                        <Link href="/where-we-source">
+                            <a className="text-white mx-1 font-thin hover:underline">Where We Source</a>
+                        </Link>
+                        <Link href="/contact-us">
+                            <a className="text-white mx-1 font-thin hover:underline">Contact Us</a>
+                        </Link>
                         </div>
                     </div>
             </div>
