@@ -51,6 +51,13 @@ const Navbar = () => {
                     <div className="flex basis-1/3 justify-center">
                         <div id="logo">
                             <Link href="/" alt="homepage">
+                                    <Image 
+                                        src="/sykes-brand-logo-white.svg"
+                                        alt="logo"
+                                        height={100}
+                                        width={100}
+                                        loading="eager"
+                                    />
                             </Link>
                         </div>
                     </div>
