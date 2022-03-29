@@ -49,12 +49,12 @@ const Navbar = () => {
                             <Link href="/" alt="homepage">
                                 <a>
                                     <div id="logo">
-                                    <Image 
-                                        src="/sykes-brand-logo-white.svg"
-                                        alt="logo"
-                                        height={100}
-                                        width={100}
-                                        loading="eager"
+                                        <Image 
+                                            src="/sykes-brand-logo-white.svg"
+                                            alt="logo"
+                                            width={100}
+                                            height={100}
+                                            loading="eager"
                                         />
                                     </div>
                                 </a>
