@@ -74,14 +74,14 @@ const Navbar = () => {
         </nav>
         <nav className={sidebar ? 'nav-menu active ' : 'nav-menu '} >
             <div className="flex">
-                <ul className="bg-brand p-2 h-[100vh] w-2/3 z-50 flex flex-col basis-2/3 justify-start space-y-4 text-xl uppercase font-body" id="nav-menu">
+                <div className="bg-brand p-2 h-[100vh] w-2/3 z-50 flex flex-col basis-2/3 justify-start space-y-4 text-xl uppercase font-body" id="nav-menu">
                     <AiIcons.AiOutlineClose className="text-white text-2xl text-center" onClick={showSidebar} />
-                    <Link href="/"><li className="text-white pl-3 text-center hover:bg-Whitehover" onClick={showSidebar}>Home</li></Link>
-                    <Link href="/about-us"><li className="text-white pl-3 text-center" onClick={showSidebar}>About Us</li></Link>
-                    <Link href="/contact-us"><li className="text-white pl-3 text-center" onClick={showSidebar}>Contact Us</li></Link>
-                    <Link href="/our-facilities"><li className="text-white pl-3 text-center" onClick={showSidebar}>Our Facilities</li></Link>
-                    <Link href="/where-we-source"><li className="text-white pl-3 text-center" onClick={showSidebar}>Where we source</li></Link>
-                </ul>
+                    <Link href="/"><a className="text-white pl-3 text-center hover:bg-Whitehover" onClick={showSidebar}>Home</a></Link>
+                    <Link href="/about-us"><a className="text-white pl-3 text-center" onClick={showSidebar}>About Us</a></Link>
+                    <Link href="/contact-us"><a className="text-white pl-3 text-center" onClick={showSidebar}>Contact Us</a></Link>
+                    <Link href="/our-facilities"><a className="text-white pl-3 text-center" onClick={showSidebar}>Our Facilities</a></Link>
+                    <Link href="/where-we-source"><a className="text-white pl-3 text-center" onClick={showSidebar}>Where we source</a></Link>
+                </div>
             </div>
         </nav>
         </>

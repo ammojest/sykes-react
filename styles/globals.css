@@ -9,12 +9,12 @@ body {
 }
 
 a {
-  color: inherit;
+  color:#747474;
   text-decoration: none;
 }
 
 p {
-  color:#8e9396;
+  color: #6f6f6f;
   line-height:2;
   margin-bottom:4rem;
   font-size: 14px;

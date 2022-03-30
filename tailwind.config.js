@@ -13,7 +13,7 @@ module.exports = {
       colors: {
         brand: "#233681",
         copy: "##666666",
-        footer: "#9f9f9f",
+        footer: "#747474",
         Whitehover: "#ffffff59",
     },
     fontFamily: {
