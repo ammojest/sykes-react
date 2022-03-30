@@ -26,7 +26,7 @@ const Facilities = () => {
                 </div>
                 <div className="flex relative aspect-w-16 aspect-h-9 h-[800px]">
                     <Image
-                        src="/Sefton_facility_facilities-min.jpeg"
+                        src="/Sefton_facility_facilities-min.webp"
                         alt="Looks Sir Droids!"
                         layout="fill"
                         objectFit="cover"
