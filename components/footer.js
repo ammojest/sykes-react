@@ -52,10 +52,10 @@ const Footer = () => {
                 </ul>
             </div>
             <div className="flex items-center space-x-2 text-brand ">
-                <a href="https://www.facebook.com/sykesseafood" target="_blank" rel="noreferrer"><TiIcons.TiSocialFacebook size={30}/></a>
-                <a href="https://twitter.com/SykesSeafood" target="_blank" rel="noreferrer"><TiIcons.TiSocialTwitter size={30}/></a>
-                <a href="https://www.linkedin.com/company/sykesseafood/mycompany/" target="_blank" rel="noreferrer"><FaIcons.FaLinkedin size={30}/></a>
-                <a href="https://www.instagram.com/sykesseafood/" target="_blank" rel="noreferrer"><FaIcons.FaInstagramSquare size={30}/></a>
+                <a href="https://www.facebook.com/sykesseafood" target="_blank" rel="noreferrer" aria-label="Facebook"><TiIcons.TiSocialFacebook size={30}/></a>
+                <a href="https://twitter.com/SykesSeafood" target="_blank" rel="noreferrer" aria-label="Twitter" ><TiIcons.TiSocialTwitter size={30}/></a>
+                <a href="https://www.linkedin.com/company/sykesseafood/mycompany/" target="_blank" rel="noreferrer" aria-label="Linked In" ><FaIcons.FaLinkedin size={30}/></a>
+                <a href="https://www.instagram.com/sykesseafood/" target="_blank" rel="noreferrer" aria-label="Instagram" ><FaIcons.FaInstagramSquare size={30}/></a>
             </div>
         </div>
         <div className='py-5 px-7 mt-5'>
