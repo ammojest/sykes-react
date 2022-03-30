@@ -23,33 +23,25 @@ const Footer = () => {
             </div>
             <div className="flex flex-col text-xs">
             <h3 className='uppercase mb-1'>Company</h3>
-                <ul className="flex flex-col justify-center uppercase text-footer text-xs">
+                <div className="flex flex-col justify-center uppercase text-footer text-xs">
                     <Link href="/about-us" passHref>
-                        <a>
-                            <li className='hover:underline'>About Us</li>
-                        </a>
+                        <a className='hover:underline'>About Us</a>
                     </Link>
                     <Link href="/where-we-source" passHref>
-                        <a>
-                            <li className='hover:underline'>Where we source</li>
-                        </a>
+                        <a className='hover:underline'>Where we source</a>
                     </Link>
                     <Link href="/our-facilities" passHref>
-                        <a>
-                            <li className='hover:underline'>Our Facilities</li>
-                        </a>
+                        <a className='hover:underline'>Our Facilities</a>
                     </Link>
-                </ul>
+                </div>
             </div>
             <div className="flex flex-col text-xs">
                 <h3 className='uppercase mb-1'>Support</h3>
-                <ul className="flex flex-col justify-center uppercase text-footer text-xs">
+                <div className="flex flex-col justify-center uppercase text-footer text-xs">
                     <Link href="/contact-us" passHref>
-                        <a>
-                            <li className='hover:underline'>Contact Us</li>
-                        </a>
+                        <a className='hover:underline'>Contact Us</a>
                     </Link>
-                </ul>
+                </div>
             </div>
             <div className="flex items-center space-x-2 text-brand ">
                 <a href="https://www.facebook.com/sykesseafood" target="_blank" rel="noreferrer" aria-label="Facebook"><TiIcons.TiSocialFacebook size={30}/></a>
