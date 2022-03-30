@@ -35,7 +35,7 @@ export default function Home( ) {
           </div>
           <div className="flex relative aspect-w-16 aspect-h-9 h-[500px] order-1 md:order-2">
               <Image
-                  src="/fisherman.jpeg"
+                  src="/fisherman.webp"
                   alt="Picture of something nice"
                   layout="fill"
                   objectFit="cover"
