@@ -47,7 +47,7 @@ export default function Home( ) {
       <div className="grid grid-cols-1 md:grid-cols-2 my-7 space-y-5">
           <div className="flex relative aspect-w-16 aspect-h-9 h-[500px]">
               <Image
-                  src="/Old_1.jpeg"
+                  src="/old-1.webp"
                   alt="Picture of something nice"
                   layout="fill"
                   objectFit="cover"
