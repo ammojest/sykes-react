@@ -3,7 +3,7 @@ import Image from "next/image";
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import { useState, useEffect, useRef } from "react";
-;
+import Logo from './svg/sykes-brand-logo-white.svg';
 
 const Navbar = () => {
 
@@ -35,40 +35,30 @@ const Navbar = () => {
         <nav className="bg-brand z-50 w-screen sticky top-0">
             <div className="px-12 py-2 md:py-4 mx-auto flex uppercase bg-transparent text-md">
                     <div className="flex basis-1/3 justify-start items-center">
-                        <div>
-                            <FaIcons.FaBars width={60} onClick={showSidebar} className="text-3xl text-white block md:hidden z-60"/>
-                            <Link href="/about-us">
-                                <a className="text-white mx-1 font-thin hover:underline">About Us</a>
-                            </Link>
-                            <Link href="/our-facilities">
-                                <a className="text-white mx-1 font-thin hover:underline">Our Facilities</a>
-                            </Link>
-                        </div>
+                        <FaIcons.FaBars width={60} onClick={showSidebar} className="text-3xl text-white block md:hidden z-60"/>
+                        <Link href="/about-us">
+                            <a className="text-white mx-2 font-thin hidden md:flex hover:underline">About Us</a>
+                        </Link>
+                        <Link href="/our-facilities">
+                            <a className="text-white mx-2 font-thin hidden md:flex hover:underline">Our Facilities</a>
+                        </Link>
                     </div>
                     <div className="flex basis-1/3 justify-center">
                             <Link href="/" alt="homepage">
                                 <a>
                                     <div id="logo">
-                                        <Image 
-                                            src="/sykes-brand-logo-white.svg"
-                                            alt="logo"
-                                            width={100}
-                                            height={100}
-                                            loading="eager"
-                                        />
+                                    <Logo width={100} height={100} />
                                     </div>
                                 </a>
                             </Link>
                     </div>
                     <div className="flex basis-1/3 justify-end items-center">
-                        <div>
                         <Link href="/where-we-source">
-                            <a className="text-white mx-1 font-thin hover:underline">Where We Source</a>
+                            <a className="text-white mx-2 font-thin hidden md:flex hover:underline">Where We Source</a>
                         </Link>
                         <Link href="/contact-us">
-                            <a className="text-white mx-1 font-thin hover:underline">Contact Us</a>
+                            <a className="text-white mx-2 font-thin hidden md:flex hover:underline">Contact Us</a>
                         </Link>
-                        </div>
                     </div>
             </div>
         </nav>

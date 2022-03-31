@@ -2,6 +2,7 @@ import * as FaIcons from 'react-icons/fa';
 import * as TiIcons from 'react-icons/ti';
 import Image from 'next/image'
 import Link from 'next/link';
+import FooterLogo from './svg/footer-logo.svg';
 
 const Footer = () => {
 
@@ -13,12 +14,7 @@ const Footer = () => {
         <footer className="py-5 mt-5">
         <div className="flex flex-col md:flex-row md:justify-between px-14 space-y-5 text-center md:text-left items-center md:items-start">
             <div className="flex flex-col justify-center ">
-                <Image 
-                    src="/sykes-brand-logo-footer.svg" 
-                    alt="sykes logo"
-                    width={100}
-                    height={100}
-                />
+                <FooterLogo width={100} height={100} />
                 {/* <img src="/sykes-brand-logo-footer.svg" alt="sykes logo footer" width={100} className="text-white" /> */}
             </div>
             <div className="flex flex-col text-xs">
