@@ -38,7 +38,7 @@ const Facilities = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 my-7 space-y-5">
                 <div className="flex relative aspect-w-16 aspect-h-9 h-[500px] order-2 md:order-1">
                     <Image
-                        src="/lonely-boat.jpeg"
+                        src="/lonely-boat.webp"
                         alt="Boat on the sea"
                         layout="fill"
                         objectFit="cover"
@@ -58,8 +58,8 @@ const Facilities = () => {
                 </div>
                 <div className="flex relative aspect-w-16 aspect-h-9 h-[500px]">
                     <Image
-                        src="/sefton-3.jpeg"
-                        alt="Boat on the sea"
+                        src="/sefton-3.webp"
+                        alt="sefton factory"
                         layout="fill"
                         objectFit="cover"
                     />

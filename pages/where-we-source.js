@@ -33,7 +33,7 @@ const WhereWeSource = () => {
                     />
                 </div>
                 <div className="flex flex-col text-center justify-center w-3/4 mx-auto space-y-5 my-7 py-5">
-                    <h3>SOURCING OUR PRODUCTS</h3>
+                    <h2>SOURCING OUR PRODUCTS</h2>
                     <p className="w-3/4 mx-auto">Our product range is built upon only the highest sourced raw materials. Our Buyers have worked within the industry and encompass knowledge, experience and confidence in their decisions. We work with trusted suppliers in joint ventures that have been part of our business for a vast amount of time. We source from across the globe with relationships built in a variety of countries through a multitude of languages. We work with teams across the world to ensure we source the finest and freshest raw material available to buy to UK Technical accreditation and standards.</p>
                 </div>
             </div>
