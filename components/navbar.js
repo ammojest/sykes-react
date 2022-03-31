@@ -44,11 +44,9 @@ const Navbar = () => {
                         </Link>
                     </div>
                     <div className="flex basis-1/3 justify-center">
-                            <Link href="/" alt="homepage" aria-label="sykes-logo">
-                                <a>
-                                    <div id="logo">
+                            <Link href="/" alt="homepage">
+                                <a aria-label="sykes-logo">
                                     <Logo width={100} height={100} />
-                                    </div>
                                 </a>
                             </Link>
                     </div>
