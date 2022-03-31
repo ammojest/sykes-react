@@ -15,12 +15,12 @@ const Navbar = () => {
 
     const changeLogoSize = () => {
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            document.getElementById("logo").style.width = "75px";
-            document.getElementById("logo").style.transition = "all 0.5s";
+            document.getElementById("sykes-brand-logo-white_svg__Layer_1").style.width = "75px";
+            document.getElementById("sykes-brand-logo-white_svg__Layer_1").style.transition = "all 0.5s";
 
         } else {
-            document.getElementById("logo").style.width = "100px";
-            document.getElementById("logo").style.transition = "all 0.5s";
+            document.getElementById("sykes-brand-logo-white_svg__Layer_1").style.width = "100px";
+            document.getElementById("sykes-brand-logo-white_svg__Layer_1").style.transition = "all 0.5s";
         }
 
     }
@@ -46,7 +46,9 @@ const Navbar = () => {
                     <div className="flex basis-1/3 justify-center">
                             <Link href="/" alt="homepage">
                                 <a aria-label="sykes-logo">
-                                    <Logo width={100} height={100} />
+                                    <div id="logo">
+                                        <Logo width={100} height={100} />
+                                    </div>
                                 </a>
                             </Link>
                     </div>
