@@ -91,7 +91,7 @@ const AboutUs = () => {
                     <p className="md:w-3/4 mx-auto">Today, we specialise in supplying a wide range of high quality, predominantly frozen, fish and seafood to a variation of market sectors including Foodservice, Retail, Wholesale, Manufacturers and End Users. We have two sites; Manchester, our hometown and the location of Sykes&apos; Head Office and Liverpool, our state of the art factory. Sykes Liverpool remains to be the driving force on industry standards within the food industry; with the highest BRC grade (AA+) awarded. Together, with our factory capabilities we are able to offer a leading service from start to finish. Most of our products are packed within the UK, in our specialist Liverpool-based production facilities using a variety of innovative methods. Here, we have the facility to tailor packaging, making it bespoke for our customers - ideal for the those who want to buy in bulk and brand with personalised labels. Within these factories we can cook, treat, or pack raw to custom specifications, proving a unique service to our customers. We also source freshly frozen at sea products; being headed, gutted or filleted within moments of catch. Resulting in a premium supplement of protein that has retained its freshly caught natural flavor and freshness.</p>
                     <Link href="/our-facilities">
                         <button className="bg-brand text-white p-3 w-1/2 mx-auto">OUR FACILITIES</button>
-                    </Link>
+                    </Link >
                 </div>
                 <div className="flex relative aspect-w-16 aspect-h-9 h-[800px]">
                     <Image
@@ -118,7 +118,7 @@ const AboutUs = () => {
                     <p className="mx-7 w-3/4 text-center text-copy">As a major importer of a wide range of fish and seafood, we accept we hold a level of responsibility. We impart our own high standards and expectations throughout the supply chain and are committed to sourcing from Sustainable, well-managed and responsible fishing areas and aquaculture regions. The growing demand for complete transparency in supply chains is one that we&apos;re at the forefront of. We pro-actively support a range of organization who are dedicated to the improvement and long term sustainability of fish stock globally; MSC, ASC, BAP and GAP to name a few. Although we do not directly own or operate &apos;Sykes&apos; fishing boats, we ensure to source directly from partner vessels and manage a supply chain that spans across the world with interactions right through from catch to customer.</p>  
                     <Link href="/where-we-source">
                             <button className="bg-brand text-white p-3 w-1/2 mx-auto">WHERE WE SOURCE</button>
-                    </Link>
+                    </Link >
                 </div>
                 <div className="relative aspect-w-16 aspect-h-9 h-[700px]">
                     <Image 
